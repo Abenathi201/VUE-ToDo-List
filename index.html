@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VUE Tutorial</title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h2>VUE JS Tutorial</h2>
+    <!-- Below is the element that has the id app and everything within it will be contrled by vue -->
+    <div id="app">
+        <h3>{{ title }} <br> {{ desc }} <br> {{ age }}</h3>
+
+        <!-- Below I using the v-on:click to increment the age by 1 on HTML  -->
+        <button @click="age++">Increment Age</button>
+
+        <!-- NOw I'm decrementing the age -->
+        <button @click="age--">Decrement Age</button>
+
+        <!-- Now changes the values of the attributes once you click on something -->
+        <div @click="changeDesc">
+            <button>Change</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
